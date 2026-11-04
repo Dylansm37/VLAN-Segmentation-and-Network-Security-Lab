@@ -71,14 +71,6 @@ ip access-group 110 out
 
 This filters traffic routed toward VLAN 20. Additional permit and deny statements are required to define the intended access for other departments and destinations.
 
-## Troubleshooting
-
-During testing, it was important to understand where ACLs filter network traffic.
-
-Because the company server and IT PC are both located in VLAN 20, their communication stays within the same subnet and does not pass through the router. Therefore, an ACL applied to the router's VLAN 20 subinterface does not filter their local communication.
-
-Traffic traveling between different VLANs must pass through the router, allowing the extended ACL to inspect and filter that traffic.
-
 ## Verification
 
 The following commands were used to verify VLAN assignments, trunk configuration, routing, DHCP operation, and ACL behavior.
