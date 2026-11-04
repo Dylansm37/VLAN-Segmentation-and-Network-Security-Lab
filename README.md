@@ -64,6 +64,10 @@ ACL 110 was applied outbound on the VLAN 20 router subinterface:
 interface GigabitEthernet0/0.20
 ip access-group 110 out
 ```
+<img width="700" height="714" alt="PC1" src="https://github.com/user-attachments/assets/e350e6bb-5c96-4451-bcab-1f0b4dba02e5" />
+<img width="703" height="711" alt="PC3" src="https://github.com/user-attachments/assets/d10d0bf1-3755-43ae-86da-d71f5a2b57d0" />
+
+
 
 This filters traffic routed toward VLAN 20. Additional permit and deny statements are required to define the intended access for other departments and destinations.
 
